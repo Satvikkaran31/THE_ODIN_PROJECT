@@ -23,13 +23,7 @@ let sign = prompt("choose between rock, paper or scissors! -");
 return sign;
 }
 
-
-function playGame(){
-    let humanscore = 0;
-    let computerscore = 0;
-    for (let i = 0 ;i<5;i++ ){
-    
-    function returnwinner(sapienchoice,compchoice){
+function returnwinner(sapienchoice,compchoice){
     if (sapienchoice == "rock"){
         if (compchoice == "ROCK"){
             return "DRAW! GO NEXT!"
@@ -65,16 +59,23 @@ function playGame(){
         }
     }
 }
-let winner = returnwinner(humanchoice(),computerchoice());
-if (winner == "YOU WON!"){humanscore++;}
-else if(winner == "YOU LOST!"){computerscore++;}
-console.log()
-console.log(winner);  
-}
-console.log("YOUR SCORE:",humanscore);
-console.log("THE AI'S SCORE:",computerscore);
-let ties = 5 - humanscore - computerscore;
-if(humanscore>computerscore){console.log("YOU WON AGAINST THE NASTY AI! "+`\n TIES: ${ties}`)}
-else{console.log("THE AI BEAT YOU!"+`\n TIES: ${ties}`)}
+
+function playGame(){
+    let humanscore = 0;
+    let computerscore = 0;
+    for (let i = 0 ;i<5;i++ ){
+    let winner = returnwinner(humanchoice(),computerchoice());
+
+    if (winner == "YOU WON!"){humanscore++;}
+    else if(winner == "YOU LOST!"){computerscore++;}
+    
+    console.log()
+    console.log(winner);  
+    }
+    console.log("YOUR SCORE:",humanscore);
+    console.log("THE AI'S SCORE:",computerscore);
+    let ties = 5 - humanscore - computerscore;
+    if(humanscore>computerscore){console.log("YOU WON AGAINST THE NASTY AI! "+`\n TIES: ${ties}`)}
+    else{console.log("THE AI BEAT YOU!"+`\n TIES: ${ties}`)}
 }  
 document.getElementById("playGame").addEventListener("click",playGame);
