@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="top_landing_page_assignment.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        .container{
+            display: flex;
+            margin-inline: auto;
+            max-height: 100vh;
+            max-width: 100%;
+            background-color:blue;
+            flex-direction:column ;
+            font-family: sans-serif;
+        }
+        .header{
+            max-height: 8%;
+            min-width: 100%;
+            background-color: #1f2937 ;
+            color: orange;
+        }
+        #box1{
+            
+            color: white;
+            max-width: 100%;
+            background-color: #1f2937;
+            display:flex ;
+            padding: 2rem;
+            
+        }
+        #box1 button{
+            background-color: #3882f6;
+            border-radius: 5px;
+            border: none;
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            color: white;
+            
+        }
+        #box1 button:hover{
+            background-color: lightblue;
+        }
+         .img-1{ 
+            background-color: white;
+            opacity: 0.6;
+            min-height: 20vh;
+            min-width: 70%;
+            color: black;
+            border-radius: 5px;
+        }
+        .box1-div-1{
+            display: block;
+            margin-inline: auto;
+            max-width: 50%;
+            margin-left: 15rem;
+            margin-right: 4.5rem;
+            justify-content: center;
+        }
+        .box1-div-2{
+            min-width: 50%;
+            padding: 2rem;
+        }
+        #box2{
+            min-width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .box2-textbox{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: bold;
+            color:#1f2937;
+            text-align: center;
+        
+            padding: none;
+            margin: none;
+        }
+        .box2-box-container{
+            display:flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            justify-content: center;
+        }   
+        .box2-box-case{
+            display: block;
+            flex-direction: row;
+            /* background-color: red; */
+            max-width: 15%;
+            padding: 1rem;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        .box2-box{
+            min-width: 20%;
+            border-radius: 5px;
+            border: 3px solid royalblue;
+            min-height: 17vh;
+            /* background-color: blue; */
+        }
+        #box3{
+            /* min-height: 15%; */
+            display: block;
+            max-width: 100%;
+            background-color: lightgray;
+            padding: 3rem;
+            text-align: center;
+            padding-left: 30%;
+        }    
+        .box3-textbox{
+            display: block;
+            max-width: 50%;
+            font-size: 1.5rem;
+            text-align: left;
+            font-style: italic;
+        }
+        #box4{
+            /* min-height: 15%; */
+            max-width: 100%;
+            background-color: purple;
+        }
+        .footer{
+            min-height: 10%;
+            min-width: 100%;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+    </div>
+    <div id="box1">
+        <div class="box1-div-1">
+            <h1>This website is awesome</h1>
+            <p>This website has some subtext that goes here under the main title. its a smaller font and the color is lower contrast</p>
+            <button id="btn">Sign up</button> <button id="btn1">REVERSE COLOR</button>
+        </div>
+        <div class="box1-div-2"><img class="img-1" src="" alt="placeholder for image"></div>
+    </div>
+    <div id="box2">
+        <div class="box2-textbox">Some random information</div>
+        <div class="box2-box-container">
+            <div class="box2-box-case"><div class="box2-box">hihii</div>This is some subtext under an illustration or image</div>
+            <div class="box2-box-case"><div class="box2-box">gfg</div>This is some subtext under an illustration or image</div>
+            <div class="box2-box-case"><div class="box2-box"></div>This is some subtext under an illustration or image</div>
+            <div class="box2-box-case"><div class="box2-box"></div>This is some subtext under an illustration or image</div>
+        </div>
+    </div>
+    <div id="box3"><div class="box3-textbox"><p>This is an inspiring quote or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All i know is that it looks nice. </p></div></div>
+</div>    
+</body>
+</html>
