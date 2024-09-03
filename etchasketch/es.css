@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    flex-direction: column;
+    display:flex;
+}
+header{
+    min-width: 100%;
+    max-height: 10%;
+    display: flex;
+    background-color: lightgreen;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    text-align: center;
+    margin: 0;
+}
+
+.container{
+    display:flex;
+    min-width: 100%;
+    flex-grow: 1;
+    overflow: auto;
+    flex-wrap: wrap;
+    /* background-color: skyblue; */
+}
+
+.grid_box{
+    display: flex;
+    min-width: calc(100%/16);
+    min-height: calc(100%/16);
+    border: 1px solid black;
+}
+.grid_box:hover{
+    background-color: lightgray;
+}
