@@ -1,0 +1,102 @@
+body,html{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #596D48;
+    overflow: hidden;
+}
+main{
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    min-height: 90%;
+    border-radius: 3px;
+}
+.sidebar{
+    display: flex;
+    background-image: url("media/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    min-width: 25%;
+    flex-direction: column;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.container{
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightcoral;
+    border-radius: 3px;
+}
+
+.container_text{
+    max-height: 30%;
+    background-color: aqua;
+    padding-left:2rem;
+    padding-top:2.5rem ;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: whitesmoke;
+    border-top-right-radius: 3px;
+    border: 2px solid black;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+}
+.container_form{
+    max-height: 50%;
+    background-color: white;
+    padding-bottom: 2rem;
+    
+}
+.container_form h2{
+    text-align: start;
+    padding-left: 2rem;
+}
+.container_form form{
+    padding-left: 1.5rem;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.container_form label{
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.inputform input{
+    height: 2.2rem;
+    width: 15rem;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+}
+.inputform{
+    margin: 0.5rem;
+}
+.container_account{
+    display: flex;
+    flex-direction: column;
+    max-height: 20%;
+    background-color: red;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.createaccount{
+    background-color:#596D48;
+    border-radius: 8px;
+    height: 2.5rem;
+    width: 13rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+.container_account a {
+    font: green;
+}
+.createaccount:hover{
+     background-color: green;
+}

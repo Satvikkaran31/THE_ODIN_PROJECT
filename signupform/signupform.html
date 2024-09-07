@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="signupform.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+<main>
+    <div class="sidebar"></div>
+    <div class="container">
+        <div class="container_text"><p>This is not a real online service! You know you need something<br> like this in your life to help 
+            you realise your deepest dreams. <br>Sign up <i>now</i> to  get started.</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="container_form">
+            <h2>Let's do this!</h2>
+            <form action="#" method="post">
+                <div class="inputform">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" name="first_name" id="first_name">
+                </div>
+                <div class="inputform">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" name="last_name" id="last_name">
+                </div>
+                <div class="inputform">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="inputform">
+                    <label for="phone">PHONE NUBMER</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div class="inputform">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="inputform">
+                    <label for="conpassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="conpassword" id="conpassword">
+                </div>
+            </form>
+        </div>
+        <div class="container_account">
+            <button class="createaccount" id="createaccount">Create Account</button>
+            <p>Already have an account? &nbsp; <a href="#">Log in</a> </p>
+        </div>
+    </div>
+</main>
 </body>
 </html>
