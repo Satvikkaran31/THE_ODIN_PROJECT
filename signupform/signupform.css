@@ -105,6 +105,6 @@ body,html{
 .createaccount:hover{
      background-color: green;
 }
-#password:focus, #conpassword:focus {
+.inputform input:valid{
     border: 2px solid green;
 }
