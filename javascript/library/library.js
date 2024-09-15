@@ -1,7 +1,6 @@
 let readarray = [] ;
 
 document.getElementById("addbookform").addEventListener("submit",function(){
-    event.preventDefault();
     const title = document.getElementById("title").value;
     const author = document.getElementById("author").value;
     const pages = document.getElementById("pages").value;
@@ -28,8 +27,8 @@ document.getElementById("addbookform").addEventListener("submit",function(){
     // for deleting bookcards
     bookremove.addEventListener("click",function(){
         bookshelf.removeChild(bookcard);
-        console.log(bookshelf.childNodes.length)
-        if(bookshelf.childNodes.length ===2  || bookshelf.childNodes.length === 0){
+        console.log(bookshelf.children.length)
+        if( bookshelf.children.length === 0){
             console.log("hi there")
             bookshelf.style.backgroundImage="url('media/openart-image_gCmiUbtY_1726424071484_raw.svg')";
             bookshelf.innerHTML = '<h1 id="h1tag"> GO READ SOMETHING!!!!</h1>'
@@ -55,6 +54,7 @@ document.getElementById("addbookform").addEventListener("submit",function(){
     }
     bookshelf.appendChild(bookcard);
     document.getElementById("modalOverlay").style.display = "none";
+    event.preventDefault();
 }
 )
 

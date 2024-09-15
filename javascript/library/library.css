@@ -12,7 +12,7 @@ body,html{
     position: relative;
     display: flex;
     background-color: #0f172a;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
     font-family:cursive;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ body,html{
     background-color: #f3f4f6;
     display: grid;
     justify-content: center;
-    grid-template-columns:9fr 1fr ;
+    grid-template-columns:9fr 2fr ;
     grid-template-rows: 9fr 1fr ;
 }
 .bookshelf{
@@ -46,7 +46,7 @@ body,html{
 .svg-background {
     /* border: 2px solid black; */  
     background-image: url('media/book-svgrepo-com.svg'); 
-    background-size: fill; 
+    background-size: contain; 
     background-repeat: no-repeat; 
     display: flex; 
     align-items: flex-start;
@@ -87,7 +87,7 @@ body,html{
     font-weight: 550;
 }
 .svg-background:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
 }
 /* --------------------------------------------------------- */
@@ -116,7 +116,24 @@ body,html{
     width: max(200px,20%);
     opacity: 0.9;
 }
-
+.info-area{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#openModalButton{
+    font-size: 1.7rem;
+    font-weight: 550;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 4rem;
+    padding: 0 1rem 0 1rem;
+}
+#openModalButton:hover{
+    cursor: pointer;
+    background-color: #d1d5db;
+}
 /* Close button for the the inputform */
 #closeModal {
     cursor: pointer;
