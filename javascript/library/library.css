@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "special elite" ;
+    src: url(media/SpecialElite-Regular.ttf) format(truetype);
+}
 body,html{
  padding: 0;
  margin: 0;
@@ -13,11 +17,12 @@ body,html{
     display: flex;
     background-color: #0f172a;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-    font-family:cursive;
-    justify-content: center;
+    font-family:"special elite";
+    justify-content: flex-start;
     align-items: center;
     font-size: 3rem;
     color: white;
+    padding: 1rem;
 }
 .main{
     padding: 1rem;
@@ -42,6 +47,7 @@ body,html{
     background-repeat: no repeat;
     background-size: cover;
     color: white;
+    font-family: "special elite";
 }
 .svg-background {
     /* border: 2px solid black; */  
@@ -123,7 +129,8 @@ body,html{
 }
 #openModalButton{
     font-size: 1.7rem;
-    font-weight: 550;
+    font-weight: 600;
+    font-family: "special elite";
     border: none;
     background-color: transparent;
     border-radius: 10px;

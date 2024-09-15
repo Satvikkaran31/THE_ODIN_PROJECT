@@ -104,3 +104,39 @@ window.addEventListener("click", function(event) {
         modal.style.display = "none"; 
     }
 }); 
+
+
+
+const addBookButton = document.getElementById('openModalButton');
+const buttonText = '+ Add Book'; 
+let index = 0; 
+let isTyping = true;
+
+function typeText() {
+    if (isTyping) {
+        // Add letters one by one
+        if (index < buttonText.length) {
+            addBookButton.textContent += buttonText.charAt(index);
+            index++;
+            setTimeout(typeText, 150); 
+        } else {
+            isTyping = false;
+            setTimeout(typeText, 1000); 
+        }
+    } else {
+        
+        if (index > 1) {
+            addBookButton.textContent = buttonText.substring(0, index - 1);
+            index--;
+            setTimeout(typeText, 150); 
+        } else {
+            isTyping = true;
+            setTimeout(typeText, 1000); 
+        }
+    }
+}
+
+window.onload = function() {
+    addBookButton.textContent = ''; 
+    typeText();     
+};
