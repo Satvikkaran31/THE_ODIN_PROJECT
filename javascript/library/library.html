@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="library.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODIN LIBRARY</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- main content -->
+
+        <div class="header">BOOKEDin</div>
+        <div class="main">
+            <div class="bookshelf" id="bookshelf">
+               <H1 id="h1tag">GO READ SOMETHING!!!</H1>
+            </div>
+
+            <!-- info area  -->
+
+            <div class="info-area">
+                <button id="openModalButton">ADD BOOK</button>
+            </div>
+        </div>
+
+       <!-- book form  -->
+        
+    </div>
+    <div id="modalOverlay"> <!--background blur-->
+        <div class="modal-content">
+            <span id="closeModal">
+                <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L12 13.06L9.7 15.36C9.55 15.51 9.36 15.58 9.17 15.58C8.98 15.58 8.79 15.51 8.64 15.36C8.35 15.07 8.35 14.59 8.64 14.3L10.94 12L8.64 9.7C8.35 9.41 8.35 8.93 8.64 8.64C8.93 8.35 9.41 8.35 9.7 8.64L12 10.94L14.3 8.64C14.59 8.35 15.07 8.35 15.36 8.64C15.65 8.93 15.65 9.41 15.36 9.7L13.06 12L15.36 14.3Z" fill="#292D32"/>
+                </svg>
+            </span>
+            <form  id="addbookform">
+                <h2>Enter Book Details:</h2>
+                <div class="inputform" id="titleform">
+                    <label for="title">TITLE</label>
+                    <input type="text" name="title" id="title" required maxlength="30">
+                </div>
+
+                <div class="inputform" id="authorform">
+                    <label for="author">AUTHOR</label>
+                    <input type="text" name="author" id="author" required maxlength="20">
+                </div>
+                <div class="inputform" id="pagesform">
+                    <label for="pages">PAGES</label>
+                    <input type="number" name="pages" id="pages" >
+                </div>
+                <div class="inputform" id="readform">
+                    <h3>Have you read the book?</h3>
+                     <label class="switch" id="readlabel"> 
+                        <input checked type="checkbox" id="read" name="read" required>
+                        <span class="slider round"></span>
+                      </label>
+
+                </div>
+                <span class="buttondiv">
+                <button type="submit" id="submitbook">Submit</button>
+                </span>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
