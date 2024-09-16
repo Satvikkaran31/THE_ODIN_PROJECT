@@ -1,7 +1,16 @@
 @font-face {
     font-family: "special elite" ;
-    src: url(media/SpecialElite-Regular.ttf) format(truetype);
+    src: url(media/fonts/SpecialElite-Regular.ttf) format(truetype);
 }
+@font-face {
+    font-family: "playball" ;
+    src: url(media/fonts/Playball-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: "atwriter";
+    src: url(media/fonts/atwriter.ttf);
+}
+
 body,html{
  padding: 0;
  margin: 0;
@@ -17,12 +26,13 @@ body,html{
     display: flex;
     background-color: #0f172a;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-    font-family:"special elite";
-    justify-content: flex-start;
+    font-family:"atwriter";
+    letter-spacing:5px;
+    justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
-    padding: 1rem;
+    margin: 0;
 }
 .main{
     padding: 1rem;
